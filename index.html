@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ukashi | 个人主页</title>
+    <meta name="description" content="ukashi 的个人主页 - AI / 算法方向研究生">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanline"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="prompt">$</span>
+                <span class="typing">whoami</span>
+            </div>
+            <nav class="nav">
+                <a href="#about">~/about</a>
+                <a href="#skills">~/skills</a>
+                <a href="#projects">~/projects</a>
+                <a href="#experience">~/experience</a>
+                <a href="#awards">~/awards</a>
+                <a href="#contact">~/contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">ukashi@github: ~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> <span class="cmd">cat profile.txt</span></p>
+                        <p class="output">
+                            <span class="label">Name       :</span> ukashi<br>
+                            <span class="label">Role       :</span> LLM Agent & 推荐算法方向研究生<br>
+                            <span class="label">School     :</span> 华东师范大学 · 软件工程<br>
+                            <span class="label">Location   :</span> Shanghai, China<br>
+                            <span class="label">Status     :</span> <span class="blink-dot"></span> 在读中，折腾大模型与算法
+                        </p>
+                        <p><span class="prompt">$</span> <span class="cmd">echo "Hello, World!"</span></p>
+                        <h1 class="hero-title">你好，我是 <span class="accent">ukashi</span><span class="cursor">_</span></h1>
+                        <p class="hero-subtitle">// 聚焦大模型 Agent 与推荐算法，喜欢把想法跑起来</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span> 关于我</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            目前是华东师范大学软件工程专业的硕士在读，主要研究方向是
+                            <strong>大模型 Agent 算法</strong>与<strong>推荐算法</strong>，两个方向都有一些积累。
+                            本科毕业于东北师范大学智能科学与技术专业，一路从传统 ML 摸到 LLM、RAG 和 RL。
+                        </p>
+                        <p>
+                            也写过一点前端，做过小程序，所以从模型训练到把东西端到端跑起来都能 hold 住。
+                            日常除了写代码，喜欢看动漫、刷电影、出去旅游；常年熬夜选手，
+                            对新技术保持好奇，更喜欢把论文里的想法落地成能真正跑起来的东西。
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-num">5+</span>
+                            <span class="stat-label">年编码经验</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">20+</span>
+                            <span class="stat-label">完成项目</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">∞</span>
+                            <span class="stat-label">熬夜指数</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span> 技术栈</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>// 编程语言</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>// AI / ML</h3>
+                        <div class="tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Transformers</span>
+                            <span class="tag">LlamaFactory</span>
+                            <span class="tag">verl</span>
+                            <span class="tag">LangChain</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>// LLM & RAG</h3>
+                        <div class="tags">
+                            <span class="tag">Milvus</span>
+                            <span class="tag">BGE</span>
+                            <span class="tag">BM25</span>
+                            <span class="tag">Coze</span>
+                            <span class="tag">Dify</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>// 工具</h3>
+                        <div class="tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Claude Code</span>
+                            <span class="tag">Cursor</span>
+                            <span class="tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span> 项目经历</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">{ }</span>
+                        </div>
+                        <h3 class="project-title">基于 MCTS 的几何问题形式化推理求解</h3>
+                        <p class="project-desc">
+                            基于 FormalGeo 形式化环境构建 MCTS 搜索智能体，设计 Actor-Evaluator 双模块求解几何题，
+                            重点攻克辅助线构造难点；对 Qwen2.5-7B 做 SFT + GRPO 两阶段训练，
+                            下一步定理 Top-5 ACC 从 0.69 提升到 0.72，整体求解率达 0.82。
+                        </p>
+                        <div class="project-tech">
+                            <span>Qwen2.5-7B</span>
+                            <span>SFT</span>
+                            <span>GRPO</span>
+                            <span>MCTS</span>
+                            <span>FormalGeo</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">{ }</span>
+                        </div>
+                        <h3 class="project-title">车载说明书问答 RAG 系统</h3>
+                        <p class="project-desc">
+                            面向车主与客服场景的知识问答系统：PyMuPDF 解析 + 父子两级语义切分，
+                            BM25 与 Milvus（dense + sparse + RRF）双路混合召回 + bge-reranker 精排，
+                            微调 Qwen3-8B 实现引用编号输出与越界拒答，离线综合得分 0.88，Context Recall 0.94。
+                        </p>
+                        <div class="project-tech">
+                            <span>Qwen3-8B</span>
+                            <span>BGE</span>
+                            <span>BM25</span>
+                            <span>Milvus</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span> 经历</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025.11 — 2026.01</span>
+                            <h3>算法实习生 @ 哈啰普惠 · 普惠用车部门</h3>
+                            <p>
+                                负责独享拼人判责系统的 Prompt Engineering，基于 Qwen-Plus 输出 JSON 判责结果，
+                                1W+ 测试集上 Precision 0.91 / Recall 0.89；
+                                参与基于 Gated Transformer 的模拟轨迹风控模型，上线后黑样本召回率由 48% 提升至 60.3%。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024.09 — 至今</span>
+                            <h3>软件工程硕士 @ 华东师范大学</h3>
+                            <p>软件工程学院，研究方向聚焦大模型推理、RAG 与强化学习。985 / 211 / 双一流。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2020.09 — 2024.06</span>
+                            <h3>智能科学与技术 本科 @ 东北师范大学</h3>
+                            <p>信息科学技术学院，系统学习人工智能基础课程，打下算法与工程基本功。211 / 双一流。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards / Competitions Section -->
+        <section id="awards" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span> 竞赛经历</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">[*]</span>
+                        </div>
+                        <h3 class="project-title">AAAI 2024 Math Problem Solving · Track1 团体赛第二名</h3>
+                        <p class="project-desc">
+                            国际数学问题求解竞赛赛道，团队斩获 Track1 第二名。
+                        </p>
+                        <div class="project-tech">
+                            <span>LLM</span>
+                            <span>Math Reasoning</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">[*]</span>
+                            <div class="project-links">
+                                <a href="https://github.com/SageJavon/er-gikt-Flask-Vue" target="_blank" rel="noopener" aria-label="GitHub">[source]</a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">华为杯中国研究生 AI 创新大赛 · 全国三等奖（2024）</h3>
+                        <p class="project-desc">
+                            基于"学-练-评-辅"闭环，集成 RAG 课程问答、编程启发式引导、
+                            ICE-Score + LLM 代码评估、GIKT 知识追踪与个性化推荐四大模块。
+                        </p>
+                        <div class="project-tech">
+                            <span>RAG</span>
+                            <span>ICE-Score</span>
+                            <span>GIKT</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">[*]</span>
+                        </div>
+                        <h3 class="project-title">2025 芒果 TV 算法大赛 · Top 12%</h3>
+                        <p class="project-desc">
+                            基于用户行为数据设计多尺度滑动窗口与交叉特征，
+                            CatBoost 两阶段架构（CTR + CVR 预测），测试分数 0.271。
+                        </p>
+                        <div class="project-tech">
+                            <span>CatBoost</span>
+                            <span>CTR / CVR</span>
+                            <span>Feature Eng</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">[*]</span>
+                        </div>
+                        <h3 class="project-title">2025 腾讯广告算法大赛 · Top 30%</h3>
+                        <p class="project-desc">
+                            基于用户-广告交互序列构建生成式推荐模型 HSTU，
+                            InfoNCE 对比学习损失，测试分数 0.074，并尝试 RQ-VAE 多模态特征量化。
+                        </p>
+                        <div class="project-tech">
+                            <span>HSTU</span>
+                            <span>InfoNCE</span>
+                            <span>RQ-VAE</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span> 联系方式</h2>
+                <div class="terminal contact-terminal">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">contact.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> <span class="cmd">./connect.sh</span></p>
+                        <p class="output">
+                            <span class="label">→ GitHub   :</span> <a href="https://github.com/ukashi" target="_blank" rel="noopener">github.com/ukashi</a><br>
+                            <span class="label">→ Email    :</span> <a href="mailto:wuyzbj009@163.com">wuyzbj009@163.com</a><br>
+                            <span class="label">→ School   :</span> 华东师范大学 · 软件工程学院
+                        </p>
+                        <p><span class="prompt">$</span> <span class="cursor">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ukashi · Built with <span class="heart">&lt;3</span> and pure HTML/CSS</p>
+            <p class="footer-tip">// Hosted on GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
