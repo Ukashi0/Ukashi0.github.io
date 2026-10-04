@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ukashi | 个人主页</title>
-    <meta name="description" content="ukashi 的个人主页 - AI / 算法方向研究生">
+    <title>ukashi | AI Agent Developer</title>
+    <meta name="description" content="ukashi 的个人主页 - AI Agent 开发与大模型应用工程">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="scanline"></div>
-
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <span class="prompt">$</span>
-                <span class="typing">whoami</span>
-            </div>
-            <nav class="nav">
+            <a class="logo" href="#" aria-label="返回首页">
+                <span class="logo-mark">U</span>
+                <span class="logo-copy">ukashi<span>/agent-builder</span></span>
+            </a>
+            <nav class="nav" aria-label="主页导航">
                 <a href="#about">~/about</a>
                 <a href="#skills">~/skills</a>
                 <a href="#projects">~/projects</a>
+                <a href="#papers">~/papers</a>
                 <a href="#experience">~/experience</a>
                 <a href="#awards">~/awards</a>
                 <a href="#contact">~/contact</a>
@@ -32,27 +31,76 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero-title">
             <div class="container">
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="terminal-title">ukashi@github: ~</span>
-                    </div>
-                    <div class="terminal-body">
-                        <p><span class="prompt">$</span> <span class="cmd">cat profile.txt</span></p>
-                        <p class="output">
-                            <span class="label">Name       :</span> ukashi<br>
-                            <span class="label">Role       :</span> LLM Agent & 推荐算法方向研究生<br>
-                            <span class="label">School     :</span> 华东师范大学 · 软件工程<br>
-                            <span class="label">Location   :</span> Shanghai, China<br>
-                            <span class="label">Status     :</span> <span class="blink-dot"></span> 在读中，折腾大模型与算法
+                <div class="hero-grid">
+                    <div class="hero-copy" data-reveal>
+                        <p class="eyebrow"><span class="status-dot"></span> OPEN TO AI AGENT / AI APPLICATION ROLES</p>
+                        <p class="hero-overline">UKASHI · AI APPLICATION ENGINEER</p>
+                        <h1 id="hero-title" class="hero-title">
+                            构建会思考、会调用工具、<span class="accent">能落地</span>的 AI Agent。
+                        </h1>
+                        <p class="hero-subtitle">
+                            从模型能力、RAG 与工具调用，到评测、接口和产品交付——
+                            我更关心如何让 AI 真正进入业务流程，而不只停留在 Demo。
                         </p>
-                        <p><span class="prompt">$</span> <span class="cmd">echo "Hello, World!"</span></p>
-                        <h1 class="hero-title">你好，我是 <span class="accent">ukashi</span><span class="cursor">_</span></h1>
-                        <p class="hero-subtitle">// 聚焦大模型 Agent 与推荐算法，喜欢把想法跑起来</p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#projects">查看项目 <span aria-hidden="true">↘</span></a>
+                            <a class="button button-secondary" href="#contact">联系我</a>
+                        </div>
+                        <ul class="hero-meta" aria-label="个人概览">
+                            <li>华东师范大学 · 软件工程</li>
+                            <li>Shanghai, China</li>
+                            <li>LLM Agent · RAG · AI Applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="agent-console" data-reveal aria-label="Agent 工作流示意">
+                        <div class="agent-console-header">
+                            <div>
+                                <span class="console-label">AGENT RUNTIME</span>
+                                <strong>ukashi.build()</strong>
+                            </div>
+                            <span class="runtime-state"><i></i> ready</span>
+                        </div>
+                        <div class="agent-flow">
+                            <article class="flow-step">
+                                <span class="flow-index">01</span>
+                                <div>
+                                    <span class="flow-name">PLAN</span>
+                                    <p>拆解目标与约束</p>
+                                </div>
+                                <span class="flow-signal signal-blue"></span>
+                            </article>
+                            <article class="flow-step">
+                                <span class="flow-index">02</span>
+                                <div>
+                                    <span class="flow-name">TOOLS</span>
+                                    <p>连接检索、代码与业务 API</p>
+                                </div>
+                                <span class="flow-signal signal-coral"></span>
+                            </article>
+                            <article class="flow-step">
+                                <span class="flow-index">03</span>
+                                <div>
+                                    <span class="flow-name">MEMORY</span>
+                                    <p>保持上下文与可追踪状态</p>
+                                </div>
+                                <span class="flow-signal signal-mint"></span>
+                            </article>
+                            <article class="flow-step flow-step-active">
+                                <span class="flow-index">04</span>
+                                <div>
+                                    <span class="flow-name">RESULT</span>
+                                    <p>评测、迭代并交付结果</p>
+                                </div>
+                                <span class="flow-check">✓</span>
+                            </article>
+                        </div>
+                        <div class="runtime-log">
+                            <span><b>12:08:31</b> workflow.completed</span>
+                            <span class="runtime-chip">human-in-the-loop</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,13 +109,19 @@
         <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
-                <h2 class="section-title"><span class="hash">#</span> 关于我</h2>
+                <div class="about-heading">
+                    <h2 class="section-title about-title">
+                        <span class="hash">#</span> 关于我
+                        <span class="dimple-mark" aria-hidden="true"></span>
+                    </h2>
+                </div>
                 <div class="about-grid">
                     <div class="about-text">
                         <p>
-                            目前是华东师范大学软件工程专业的硕士在读，主要研究方向是
-                            <strong>大模型 Agent 算法</strong>与<strong>推荐算法</strong>，两个方向都有一些积累。
-                            本科毕业于东北师范大学智能科学与技术专业，一路从传统 ML 摸到 LLM、RAG 和 RL。
+                            目前是华东师范大学软件工程专业的硕士在读，现阶段更专注于
+                            <strong>AI Agent 开发</strong>与<strong>大模型应用工程</strong>：围绕大模型、RAG、工具调用与记忆 / 上下文工程，
+                            把模型能力接入真实业务流程，
+                            做成真正可使用、可评测、可迭代的产品。算法与推荐经历则构成了我理解模型能力和数据问题的基础。
                         </p>
                         <p>
                             也写过一点前端，做过小程序，所以从模型训练到把东西端到端跑起来都能 hold 住。
@@ -96,7 +150,7 @@
         <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="container">
-                <h2 class="section-title"><span class="hash">#</span> 技术栈</h2>
+                <h2 class="section-title"><span class="hash">#</span> 能力栈</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h3>// 编程语言</h3>
@@ -114,12 +168,12 @@
                             <span class="tag">Transformers</span>
                             <span class="tag">LlamaFactory</span>
                             <span class="tag">verl</span>
-                            <span class="tag">LangChain</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3>// LLM & RAG</h3>
+                        <h3>// Agent & RAG</h3>
                         <div class="tags">
+                            <span class="tag">LangChain</span>
                             <span class="tag">Milvus</span>
                             <span class="tag">BGE</span>
                             <span class="tag">BM25</span>
@@ -146,6 +200,46 @@
             <div class="container">
                 <h2 class="section-title"><span class="hash">#</span> 项目经历</h2>
                 <div class="projects-grid">
+                    <article class="project-card project-card-featured">
+                        <div class="project-header">
+                            <span class="project-icon">{ agent }</span>
+                            <span class="project-kicker">FEATURED BUILD</span>
+                        </div>
+                        <h3 class="project-title">PaperPilot：面向复杂科研任务的 Research Agent</h3>
+                        <p class="project-desc">
+                            面向科研论文调研，支持论文检索、全文精读、多论文对比与多轮研究会话，
+                            生成带原文引用的中文研究笔记。
+                        </p>
+                        <ul class="project-points">
+                            <li>
+                                <strong>Agent Runtime Harness：</strong>借鉴 Pi Agent 的事件式会话设计，统一管理工具调用、
+                                Session 与 Context，支持预算化上下文、分支会话及节点级断点恢复；在 36 个固定故障注入场景中
+                                全部恢复成功，已完成节点重复执行次数由 54 次降至 0。
+                            </li>
+                            <li>
+                                <strong>Agentic RAG 检索：</strong>结合多路查询、RRF 融合与 LLM 重排，通过条件覆盖检查和受限补搜改善漏召回；
+                                在 50 个查询数据中测试，Precision@5 由 80.9% 提升至 88.2%，nDCG@5 由 89.0% 提升至 94.4%，
+                                候选池召回率由 75.4% 提升至 80.4%。
+                            </li>
+                            <li>
+                                <strong>长文档理解与引用溯源：</strong>结合 PDF 章节解析与结构化输出约束，生成中文精读笔记并保留对应原文引文；
+                                通过程序完成引用定位与页码校验，复用结构化精读结果进行多论文对比。
+                            </li>
+                            <li>
+                                <strong>后端服务化：</strong>基于 FastAPI，持久化任务队列与独立 Worker 实现异步任务服务，
+                                支持 SSE 状态推送、任务取消与恢复，提供 Docker Compose 部署配置。
+                            </li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Research Agent</span>
+                            <span>Agentic RAG</span>
+                            <span>Agent Runtime</span>
+                            <span>FastAPI</span>
+                            <span>SSE</span>
+                            <span>Docker Compose</span>
+                        </div>
+                    </article>
+
                     <article class="project-card">
                         <div class="project-header">
                             <span class="project-icon">{ }</span>
@@ -187,29 +281,123 @@
             </div>
         </section>
 
+        <!-- Publications Section -->
+        <section id="papers" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span> 论文成果</h2>
+                <div class="papers-grid">
+                    <article class="paper-card">
+                        <span class="paper-index">PAPER_01</span>
+                        <h3 class="paper-title">GeoLMA: A Collaborative Multi-Agent Framework for Geometry Theorem Proving</h3>
+                        <p class="paper-abstract">
+                            <span class="paper-abstract-label">研究摘要</span>
+                            将 MCTS 与 FormalGeo 结合为协作式多智能体框架，由 Expander、Evaluator 和 Reflector
+                            分别完成定理生成、进度评估与失败反思；在 FormalGeo7k 上达到 87.02% Overall Accuracy
+                            和 93.89% Problem Completion Rate，重点提升长推理链几何题的求解稳定性。
+                        </p>
+                        <div class="paper-meta" aria-label="论文元信息">
+                            <span>第一作者</span>
+                            <span>已录用 · 会议信息已公开</span>
+                            <span>IEEE SMC 2026</span>
+                            <span>CCF-C</span>
+                        </div>
+                    </article>
+
+                    <article class="paper-card">
+                        <span class="paper-index">PAPER_02</span>
+                        <h3 class="paper-title">Free or Systematic? Structured AI Guidance Improves Tutor Knowledge-State Estimation Quality and Self-Regulated Learning in Programming Education</h3>
+                        <p class="paper-abstract">
+                            <span class="paper-abstract-label">研究摘要</span>
+                            通过 Java 与 Python 编程课程中的两项被试内交叉研究，对比自由问答与“学—练—评—辅”系统化脚手架。
+                            结构化引导将知识状态估计的 ECE 从 0.24 降至 0.13，并促进规划、监控等自我调节学习行为。
+                        </p>
+                        <div class="paper-meta" aria-label="论文元信息">
+                            <span>第二作者</span>
+                            <span>已录用 · 可检索</span>
+                            <span>CogSci 2026</span>
+                            <span>CCF-B</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Experience Section -->
         <section id="experience" class="section">
             <div class="container">
                 <h2 class="section-title"><span class="hash">#</span> 经历</h2>
                 <div class="timeline">
-                    <div class="timeline-item">
+                    <div class="timeline-item timeline-item-featured timeline-item-internship">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date">2025.11 — 2026.01</span>
-                            <h3>算法实习生 @ 哈啰普惠 · 普惠用车部门</h3>
-                            <p>
-                                负责独享拼人判责系统的 Prompt Engineering，基于 Qwen-Plus 输出 JSON 判责结果，
-                                1W+ 测试集上 Precision 0.91 / Recall 0.89；
-                                参与基于 Gated Transformer 的模拟轨迹风控模型，上线后黑样本召回率由 48% 提升至 60.3%。
-                            </p>
+                            <details class="experience-disclosure" open>
+                                <summary class="experience-summary">
+                                    <span>
+                                        <span class="timeline-date">2026.06 — 至今</span>
+                                        <h3>AI 模型工程师（Agent 技术方向）@ 华为 · 终端小艺业务部 · 上海</h3>
+                                    </span>
+                                </summary>
+                                <div class="experience-details">
+                                    <p class="experience-intro">
+                                        面向 HarmonyOS 可穿戴设备与 Agent 长会话场景，参与端云协同 Runtime 建设，
+                                        并独立完成 Memory 与 Context 治理插件原型。
+                                    </p>
+
+                                    <div class="experience-block">
+                                        <h4>可穿戴设备端侧 System Agent Runtime</h4>
+                                        <p>
+                                            面向 HarmonyOS 可穿戴设备构建端云协同 Agent Harness，云端 LLM 负责意图理解与任务决策，
+                                            端侧 Runtime 负责语音交互调度、上下文管理和设备能力执行。
+                                        </p>
+                                        <ul class="experience-points">
+                                            <li>参与端侧交互状态机开发，围绕 5 类运行状态建立统一的状态转换与资源生命周期管理机制，解决语音链路异步并发导致的状态错乱和资源残留问题，支持用户打断与异常恢复。</li>
+                                            <li>参与完成端云协同 Tool Calling 执行闭环，接入心率、步数、运动状态和设备信息等 4 类设备能力，通过参数标准化和命令白名单统一设备能力准入；整理并执行正常及异常场景用例，覆盖非法参数、传感器无数据、未知工具、云端调用失败和用户中断等情况。</li>
+                                            <li>参与端侧上下文管理模块建设，接入 12 个健康类 Skill 与 SQLite 长期记忆，支持能力按需加载和用户信息跨会话召回，在满足个性化交互的同时控制 Prompt 体积。</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="experience-block">
+                                        <h4>DeepSeek Harness（DSH）Memory &amp; Context 治理插件</h4>
+                                        <ul class="experience-points">
+                                            <li>针对 Agent 长会话中的记忆召回与上下文膨胀问题，独立完成 Memory Guardian、Context Sentinel 两个插件原型：实现跨会话 Memory 的存储、检索与去重，并检测重复 Instructions 注入、Compaction 异常等 7 类 Context 问题。</li>
+                                            <li>基于自建离线测试集优化 Memory 召回与 Context 注入策略，Recall@3 由 65% 提升至 85%，平均 Context 注入量降低约 88%；在 350 条 Session Trace 上完成异常检测离线评测，综合 F1 达 98.9%。</li>
+                                            <li>将 Memory 保存、检索和删除能力封装为 3 个 Agent Tool，提供 HTTP 管理接口；针对持久化链路实现异常恢复并完成故障注入与重启恢复验证，测试范围内未发现已确认写入数据丢失或损坏。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-internship">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <details class="experience-disclosure">
+                                <summary class="experience-summary">
+                                    <span>
+                                        <span class="timeline-date">2025.11 — 2026.01</span>
+                                        <h3>算法实习生 @ 哈啰普惠 · 普惠用车部门</h3>
+                                    </span>
+                                </summary>
+                                <div class="experience-details">
+                                    <p>
+                                        负责独享拼人判责系统的 Prompt Engineering，基于 Qwen-Plus 输出 JSON 判责结果，
+                                        1W+ 测试集上 Precision 0.91 / Recall 0.89；
+                                        参与基于 Gated Transformer 的模拟轨迹风控模型，上线后黑样本召回率由 48% 提升至 60.3%。
+                                    </p>
+                                </div>
+                            </details>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span class="timeline-date">2024.09 — 至今</span>
-                            <h3>软件工程硕士 @ 华东师范大学</h3>
-                            <p>软件工程学院，研究方向聚焦大模型推理、RAG 与强化学习。985 / 211 / 双一流。</p>
+                            <div class="education-title-line">
+                                <h3>软件工程硕士 @ 华东师范大学</h3>
+                                <span class="education-badge">推免</span>
+                            </div>
+                            <p>本科毕业后由东北师范大学推免至华东师范大学软件工程学院攻读硕士，研究方向聚焦大模型推理、RAG 与强化学习。985 / 211 / 双一流。</p>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -233,32 +421,14 @@
                         <div class="project-header">
                             <span class="project-icon">[*]</span>
                         </div>
-                        <h3 class="project-title">AAAI 2024 Math Problem Solving · Track1 团体赛第二名</h3>
+                        <h3 class="project-title">2025 年“华为杯”第七届中国研究生人工智能创新大赛 · 全国三等奖</h3>
                         <p class="project-desc">
-                            国际数学问题求解竞赛赛道，团队斩获 Track1 第二名。
+                            参赛成果为 GeoLMA：面向几何定理证明任务的协作式多智能体框架。
                         </p>
                         <div class="project-tech">
-                            <span>LLM</span>
-                            <span>Math Reasoning</span>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">[*]</span>
-                            <div class="project-links">
-                                <a href="https://github.com/SageJavon/er-gikt-Flask-Vue" target="_blank" rel="noopener" aria-label="GitHub">[source]</a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">华为杯中国研究生 AI 创新大赛 · 全国三等奖（2024）</h3>
-                        <p class="project-desc">
-                            基于"学-练-评-辅"闭环，集成 RAG 课程问答、编程启发式引导、
-                            ICE-Score + LLM 代码评估、GIKT 知识追踪与个性化推荐四大模块。
-                        </p>
-                        <div class="project-tech">
-                            <span>RAG</span>
-                            <span>ICE-Score</span>
-                            <span>GIKT</span>
+                            <span>GeoLMA</span>
+                            <span>Multi-Agent</span>
+                            <span>Geometry Reasoning</span>
                         </div>
                     </article>
 
@@ -293,6 +463,39 @@
                             <span>RQ-VAE</span>
                         </div>
                     </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">[*]</span>
+                        </div>
+                        <h3 class="project-title">AAAI 2024 Math Problem Solving · Track1 团体赛第二名</h3>
+                        <p class="project-desc">
+                            国际数学问题求解竞赛赛道，团队斩获 Track1 第二名。
+                        </p>
+                        <div class="project-tech">
+                            <span>LLM</span>
+                            <span>Math Reasoning</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">[*]</span>
+                            <div class="project-links">
+                                <a href="https://github.com/SageJavon/er-gikt-Flask-Vue" target="_blank" rel="noopener" aria-label="GitHub">[source]</a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">2024 华为杯中国研究生 AI 创新大赛 · 全国三等奖</h3>
+                        <p class="project-desc">
+                            基于“学—练—评—辅”闭环，集成 RAG 课程问答、编程启发式引导、
+                            ICE-Score + LLM 代码评估、GIKT 知识追踪与个性化推荐四大模块。
+                        </p>
+                        <div class="project-tech">
+                            <span>RAG</span>
+                            <span>ICE-Score</span>
+                            <span>GIKT</span>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -324,8 +527,8 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 ukashi · Built with <span class="heart">&lt;3</span> and pure HTML/CSS</p>
-            <p class="footer-tip">// Hosted on GitHub Pages</p>
+            <p>&copy; 2026 ukashi · Designed and built with <span class="heart">&lt;3</span></p>
+            <p class="footer-tip">AI Agent Developer · Shanghai</p>
         </div>
     </footer>
 
